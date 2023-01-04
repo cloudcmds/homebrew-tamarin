@@ -5,21 +5,21 @@
 class Tamarin < Formula
   desc "An embedded scripting language for Go projects"
   homepage "https://github.com/cloudcmds/tamarin"
-  version "0.0.14"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cloudcmds/tamarin/releases/download/v0.0.14/tamarin_Darwin_arm64.tar.gz"
-      sha256 "79fcaa3809f4447579be6480f546af669f8ab18538d42ad04945f91f5aa66983"
+      url "https://github.com/cloudcmds/tamarin/releases/download/v1.0.0/tamarin_Darwin_arm64.tar.gz"
+      sha256 "bca0b7623c13a58ed6b5f0f3f168c7ac0936b923e2a43add44f4369df4400654"
 
       def install
         bin.install "tamarin"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cloudcmds/tamarin/releases/download/v0.0.14/tamarin_Darwin_x86_64.tar.gz"
-      sha256 "bd0cf9b9341fcfe7193bed4cf0d3dd04f97ee5ceb58f0863309c9987f476d682"
+      url "https://github.com/cloudcmds/tamarin/releases/download/v1.0.0/tamarin_Darwin_x86_64.tar.gz"
+      sha256 "318f9b7ce93b4c64e6847bc48a97d1c86b15a03836961c9dcbc0ca1eec73f7f9"
 
       def install
         bin.install "tamarin"
@@ -29,16 +29,16 @@ class Tamarin < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudcmds/tamarin/releases/download/v0.0.14/tamarin_Linux_arm64.tar.gz"
-      sha256 "dfce0f73479ea4f8c871e89f188b2e0f73764a614f0ff8f999721c2094db30e0"
+      url "https://github.com/cloudcmds/tamarin/releases/download/v1.0.0/tamarin_Linux_arm64.tar.gz"
+      sha256 "099a34ddf0ffc47a8150c3658460fe4ea00b8e81cb41e1142bc0e5a0dd14cbdd"
 
       def install
         bin.install "tamarin"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cloudcmds/tamarin/releases/download/v0.0.14/tamarin_Linux_x86_64.tar.gz"
-      sha256 "a392f1531f2117e3d3a277698b1aeece1aff7fc62ffe29e4d2c767c55fc1a993"
+      url "https://github.com/cloudcmds/tamarin/releases/download/v1.0.0/tamarin_Linux_x86_64.tar.gz"
+      sha256 "f2ee326a49ef4558b69582c799cf7002321c584fe30944f70ddc489e607c7def"
 
       def install
         bin.install "tamarin"
